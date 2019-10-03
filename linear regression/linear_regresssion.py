@@ -23,7 +23,7 @@ def computeCost(X, y, theta):
     summation = np.power(((X @ theta.T) - y), 2)
     return np.sum(summation)/(2*len(X))
 
-
+# computing gradient descent
 def gradientDescent(X, y, theta, iters, alpha):
     cost = np.zeros(iters)
     for i in range(iters):
